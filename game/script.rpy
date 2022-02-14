@@ -6,17 +6,6 @@
 #PARA LLEVAR ACABO LA VN  #
 ###########################
 
-#Inicia Declaración de variables#
-$ pregunta1_respuestaA = False  #
-$ pregunta1_respuestaB = False  #
-$ pregunta1_respuestaC = False  #
-$ pregunta1_respuestaD = False  #
-$ pregunta2_respuestaA = False  #
-$ pregunta2_respuestaB = False  #
-$ pregunta2_respuestaC = False  #
-$ pregunta2_respuestaD = False  #
-#Fin Declariacion de variables  #
-
 image splash = "splash loading.png" #imagen de carga
 image bg main = "images/bg main.png" #imagen de menú principal
 
@@ -54,6 +43,17 @@ label splashscreen:
     
 #inicio del juego
 label start:
+    #Inicia Declaración de variables#
+$ pregunta1_respuestaA = False  #
+$ pregunta1_respuestaB = False  #
+$ pregunta1_respuestaC = False  #
+$ pregunta1_respuestaD = False  #
+$ pregunta2_respuestaA = False  #
+$ pregunta2_respuestaB = False  #
+$ pregunta2_respuestaC = False  #
+$ pregunta2_respuestaD = False  #
+#Fin Declariacion de variables  #
+
     show bg main with dissolve #muestra el fondo
     show doc neutral at diabox #muestra la imagen doc neutra en diabox 
     doc "¡Bienvenido!"
