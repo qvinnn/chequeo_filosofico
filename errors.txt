@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 85: expected ':' not found.
+    "¿Eres chairo?" and show doc thinking at diabox
+                    ^
+
+Ren'Py Version: Ren'Py 8.0.0.22021003n
+Sun Feb 13 21:03:47 2022
