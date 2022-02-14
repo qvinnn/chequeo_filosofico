@@ -7,6 +7,7 @@
 ###########################
 
 
+
 image splash = "splash loading.png" #imagen de carga
 image bg main = "images/bg main.png" #imagen de menú principal
 
@@ -26,7 +27,7 @@ scene black
 with Pause(1)
     
 
-
+##Caja de dialogo
 transform diabox:
     pos(566, 32)
 
@@ -44,68 +45,64 @@ label splashscreen:
     
 #inicio del juego
 label start:
-    show bg main with dissolve
+
+    #Inicia Declaración de variables#
+    $ pregunta1_respuestaA = False  #
+    $ pregunta1_respuestaB = False  #
+    $ pregunta1_respuestaC = False  #
+    $ pregunta1_respuestaD = False  #
+    $ pregunta2_respuestaA = False  #
+    $ pregunta2_respuestaB = False  #
+    $ pregunta2_respuestaC = False  #
+    $ pregunta2_respuestaD = False  #
+    #Fin Declariacion de variables  #
+
+    show bg main with dissolve #muestra el fondo
     show doc neutral at diabox #muestra la imagen doc neutra en diabox 
+    
+    ######### PRIMER LINEA DE DIALOGO #########
     doc "¡Bienvenido!"
     "..."
 
     #Inicio de la primera pregunta
     menu:
         
-        doc "¿Eres comunista?"
+        doc "¿Hay algo así como un fundamento último y permanente de la realidad?"
 
-        "Sí.":
-            $ comunista = True #Creo que esto viene siendo muy redundante
-            $ respuesta_pregunta1 = 1
+        "1) Sí, hay un ser o seres así (Como Dios).":
+            $ pregunta1_respuestaA = True
 
-        "No.":
-            $comunista = False
-            $respuesta_pregunta1 = 2
-    
+        "2) Sí, hay estructuras así (Como la no-contradicción, que algo no puede ser y no ser al mismo tiempo).":
+            $ pregunta1_respuestaB = True
+            
+        "3) No creo, todo parece estar, o está en cambio.":
+            $ pregunta1_respuestaC = True
+        "4) No lo sé, o no se puede saber.":
+            $ pregunta1_respuestaD = True
+            
+
     #Inicio de la segunda pregunta
     menu:
 
-        doc "¿Eres anarquista?"
+        doc "¿Crees que existe un ser supremo? Un ser absoluto , primero que cualquier otro."
 
-        "Sí.":
-            $ anarquista = True 
-            $ respuesta_pregunta2 = 2
-        
-        "No.":
-            $ anarquista = False
-            $ respuesta_pregunta2 = 2
-    
-    if comunista == True or anarquista == True:
-        $jugador_chairo = True
-    
-    #Inicio de la tercera pregunta
-    show doc thinking at diabox
-    menu:
-        
-        
-        doc "¿Eres chairo?"
-        
-        "Sí.":
-            $jugador_chairo = True #HMMMMMMMMMMM ¿LES PARECE MEJOR TRABAJAR CON SOLO VALORES BOOLEANOS?????????????
-            $respuesta_pregunta3 = 1
+        "1) Sí, y ese ser es Dios.":
+            $ pregunta2_respuestaA = True
+
+        "2) Sí, pero considero a ese 'ser' un principio o sustancia absoluta.":
+            $ pregunta2_respuestaB = True
+
+        "3) No, la realidad no tiene principio tal que haya un ser 'primario'.":
+            $ pregunta2_respuestaC = True
             
-        "No.":
-            $jugador_chairo = False #Aquí la variable cambia a false al ser declarada previamente como true automaticamente al ser comunista o anarquista
-            $respuesta_pregunta3 = 2
+        "4) No lo sé, o no se puede saber.":
+            $ pregunta2_respuestaD = True
     
     #Evaluacion de contradicción
-    if jugador_chairo == False  and (anarquista == True or comunista == True):
+    if pregunta1_respuestaA == True and pregunta2_respuestaC == True:
         show doc giggle at diabox
-        doc "Puede que de hecho SÍ seas chairo...."
-    
-    if jugador_chairo == True and (anarquista == True or comunista == True):
-        show doc giggle at diabox
-        doc "Sabes que eres chairo lol"
-    
-    if jugador_chairo == False and (anarquista == False and comunista == False):
-        doc "No eres chairo..."
+        "tensión detectada XD"
+
     
     #FIN DEL JUEGO
-    return
-    
-    
+return
