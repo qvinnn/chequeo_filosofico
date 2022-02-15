@@ -1,4 +1,4 @@
-﻿﻿###########################
+﻿###########################
 #PRUEBA CHEQUEO FILOSOFICO#
 #PROPOSITO:               #
 #PROBAR SI EL SCRIPT      #
