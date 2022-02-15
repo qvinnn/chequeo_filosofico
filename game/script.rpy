@@ -52,6 +52,34 @@ $ pregunta2_respuestaA = False  #
 $ pregunta2_respuestaB = False  #
 $ pregunta2_respuestaC = False  #
 $ pregunta2_respuestaD = False  #
+$ pregunta3_respuestaA = False  #
+$ pregunta3_respuestaB = False  #
+$ pregunta3_respuestaC = False  #
+$ pregunta3_respuestaD = False  #
+$ pregunta4_respuestaA = False  #
+$ pregunta4_respuestaB = False  #
+$ pregunta4_respuestaC = False  #
+$ pregunta5_respuestaA = False  #
+$ pregunta5_respuestaB = False  #
+$ pregunta5_respuestaC = False  #
+$ pregunta6_respuestaA = False  #
+$ pregunta6_respuestaB = False  #
+$ pregunta7_respuestaA = False  #
+$ pregunta7_respuestaB = False  #
+$ pregunta7_respuestaC = False  #
+$ pregunta7_respuestaD = False  #
+$ pregunta8_respuestaA = False  #
+$ pregunta8_respuestaB = False  #
+$ pregunta8_respuestaC = False  #
+$ pregunta8_respuestaD = False  #
+$ pregunta9_respuestaA = False  #
+$ pregunta9_respuestaB = False  #
+$ pregunta9_respuestaC = False  #
+$ pregunta9_respuestaD = False  #
+$ pregunta10_respuestaA = False  #
+$ pregunta10_respuestaB = False  #
+$ pregunta10_respuestaC = False  #
+$ pregunta10_respuestaD = False  #
 #Fin Declariacion de variables  #
 
 show bg main with dissolve #muestra el fondo
