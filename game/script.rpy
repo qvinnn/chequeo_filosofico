@@ -174,6 +174,6 @@ label start:
         
 
         #TODO: TRABAJAR EN LAS EVALUACIONES
-        #      O sea, en los "eventos de contradicción"
+        #      O sea, en los "eventos de contradicciónx"
         #FIN DEL JUEGO
         return
